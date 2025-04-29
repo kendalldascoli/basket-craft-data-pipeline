@@ -5,7 +5,7 @@ dim_products AS (
    SELECT
        product_id,
        product_name,
-       product_description,
+       description,
        created_at,
        CURRENT_TIMESTAMP AS dbt_updated_at
    FROM stg_products
